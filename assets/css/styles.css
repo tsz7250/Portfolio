@@ -412,7 +412,6 @@ div.boxed p a:hover {
 }
 .siema img {
   display: block;
-  vertical-align: top;
   width: 100%;
   height: auto;
   margin: 0;
@@ -668,7 +667,8 @@ a.cta-project:hover {
   margin-bottom: 16px;
   opacity: 0.8;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   min-height: 2.8em;
@@ -993,6 +993,36 @@ a.cta-project:hover {
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 24px;
+}
+
+.project-modal__desc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 16px 0;
+}
+
+.project-modal__desc li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.project-modal__desc li::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  top: 0.1em;
+  color: var(--accent);
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.project-modal__desc li strong {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 4px;
 }
 
 .project-modal__btn {
