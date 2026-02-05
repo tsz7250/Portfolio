@@ -235,6 +235,14 @@ document.addEventListener('DOMContentLoaded', () => {
       github: 'https://github.com/tsz7250/n8n-launcher'
     },
     {
+      id: 'ezoe-work_scraper',
+      title: 'ezoe-work_scraper',
+      longDesc: '這是一個針對 ezoe.work 網站的文章爬蟲工具，可以批次抓取文章並輸出為格式化的 DOCX 與 PDF 檔案。主要功能包括：<ul><li><strong>批次爬取</strong>：從 urls.txt 或指定 txt 檔案讀取 URL，每篇產生獨立的 Markdown 檔案（書名_篇數.md）。</li><li><strong>合併轉換</strong>：依書名自動合併多篇 Markdown，轉成一本完整的 DOCX 檔案，可設定行距、標題樣式等格式。</li><li><strong>簡轉繁與 PDF</strong>：程式會將 DOCX 以 Microsoft Word 進行簡體轉繁體，並轉成 PDF 檔案。需在 Windows 環境且已安裝 Microsoft Word，否則會略過此步驟。</li><li><strong>一鍵流程</strong>：執行 main.py 可依序完成「爬取 → 轉 DOCX/PDF」的完整流程。</li></ul>技術上使用 Python 開發，整合 BeautifulSoup 進行網頁解析、pypandoc 進行 Markdown 轉 DOCX、pywin32 進行 Word 自動化操作（簡轉繁與 PDF 轉換）。',
+      tech: 'Python',
+      image: './assets/img/portfolio/ezoe-work_scraper.png',
+      github: 'https://github.com/tsz7250/ezoe-work_scraper'
+    },
+    {
       id: '1131_Chatbot_Final',
       title: '電影AI助手聊天機器人',
       longDesc: '這是一個期末分組報告專案，我們開發了一個功能豐富的多模態 AI 聊天機器人，專門提供電影相關服務。系統提供四大聊天模式：<ul><li><strong>聊天模式 (GEMINI)</strong>：與 Google Gemini AI 進行自然語言對話。</li><li><strong>電影查詢 (SEARCH_MOVIE)</strong>：搜尋 TMDB 電影資料庫獲取詳細資訊。</li><li><strong>以圖搜片 (GUESS_MOVIE)</strong>：上傳電影劇照或海報讓 AI 自動識別。</li><li><strong>字幕翻譯 (SUB_TRANSLATE)</strong>：自動生成影片字幕並翻譯成多國語言。</li></ul>技術架構使用 Flask 作為後端框架，整合 Google Gemini、LINE Bot SDK、Microsoft Azure (翻譯、語音、語言分析)、TMDB API，並使用 FFmpeg 處理多媒體檔案。系統支援 LINE Bot 和網頁版雙重介面，能夠處理圖片、音訊、影片等多媒體檔案，實現即時字幕生成與嵌入。專案採用模組化架構設計，將各功能封裝成獨立模組，便於維護與擴展。這個專案讓我深入理解了多模態 AI 處理、API 整合、多媒體處理，以及如何設計良好的對話流程。',
