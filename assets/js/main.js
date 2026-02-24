@@ -243,6 +243,14 @@ document.addEventListener('DOMContentLoaded', () => {
       github: 'https://github.com/tsz7250/ezoe-work_scraper'
     },
     {
+      id: 'bible-tracker',
+      title: 'bible-tracker',
+      longDesc: '這是一個以 LINE Bot + Google Apps Script (GAS) 打造的聖經讀經打卡應用，幫助小組成員記錄每日讀經、追蹤完成度，並查看群組統計排名。系統整合了 LINE Messaging API 進行即時互動，並使用 Google Sheets 作為後端資料庫管理成員數據。核心功能包含個人進度追蹤、每日打卡提醒以及群組排行榜功能。開發過程中，我學習了如何處理非同步 Webhook 請求、資料庫讀寫優化，以及如何設計直觀的對話式介面。',
+      tech: 'Python',
+      image: './assets/img/portfolio/bible-tracker.png',
+      github: 'https://github.com/tsz7250/bible-tracker'
+    },
+    {
       id: '1131_Chatbot_Final',
       title: '電影AI助手聊天機器人',
       longDesc: '這是一個期末分組報告專案，我們開發了一個功能豐富的多模態 AI 聊天機器人，專門提供電影相關服務。系統提供四大聊天模式：<ul><li><strong>聊天模式 (GEMINI)</strong>：與 Google Gemini AI 進行自然語言對話。</li><li><strong>電影查詢 (SEARCH_MOVIE)</strong>：搜尋 TMDB 電影資料庫獲取詳細資訊。</li><li><strong>以圖搜片 (GUESS_MOVIE)</strong>：上傳電影劇照或海報讓 AI 自動識別。</li><li><strong>字幕翻譯 (SUB_TRANSLATE)</strong>：自動生成影片字幕並翻譯成多國語言。</li></ul>技術架構使用 Flask 作為後端框架，整合 Google Gemini、LINE Bot SDK、Microsoft Azure (翻譯、語音、語言分析)、TMDB API，並使用 FFmpeg 處理多媒體檔案。系統支援 LINE Bot 和網頁版雙重介面，能夠處理圖片、音訊、影片等多媒體檔案，實現即時字幕生成與嵌入。專案採用模組化架構設計，將各功能封裝成獨立模組，便於維護與擴展。這個專案讓我深入理解了多模態 AI 處理、API 整合、多媒體處理，以及如何設計良好的對話流程。',
