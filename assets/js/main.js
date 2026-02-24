@@ -245,8 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: 'bible-tracker',
       title: 'bible-tracker',
-      longDesc: '這是一個以 LINE Bot + Google Apps Script (GAS) 打造的聖經讀經打卡應用，幫助小組成員記錄每日讀經、追蹤完成度，並查看群組統計排名。系統整合了 LINE Messaging API 進行即時互動，並使用 Google Sheets 作為後端資料庫管理成員數據。核心功能包含個人進度追蹤、每日打卡提醒以及群組排行榜功能。開發過程中，我學習了如何處理非同步 Webhook 請求、資料庫讀寫優化，以及如何設計直觀的對話式介面。',
-      tech: 'Python',
+      longDesc: '這是一個以 LINE Bot + Google Apps Script (GAS) 打造的聖經讀經打卡應用，幫助小組成員記錄每日讀經、追蹤完成度，並查看群組統計排名。系統整合了 LINE Messaging API 進行即時互動，並使用 Google Sheets 作為後端資料庫管理成員數據。核心功能包含個人進度追蹤、群組排行榜功能。開發過程中，我學習了如何處理非同步 Webhook 請求、資料庫讀寫優化，以及如何設計直觀的對話式介面。',
+      tech: 'LINE Bot / Google Apps Script',
       image: './assets/img/portfolio/bible-tracker.png',
       github: 'https://github.com/tsz7250/bible-tracker'
     },
