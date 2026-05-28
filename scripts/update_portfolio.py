@@ -242,14 +242,15 @@ def generate_readme_content(category_id, items):
             md += f"| **[{title}]({url})** | {meta} | {desc} |\n"
         return md
     elif category_id == "homework":
-        md = ""
+        md = "| 課程名稱 / 專案 | 主要技術棧 | 課程作業與實驗簡介 |\n| :--- | :--- | :--- |\n"
         for item in items:
             name = item["name"]
             url = item["url"]
             override = METADATA_OVERRIDES.get(name, {})
             title = override.get("title", name)
+            meta = override.get("meta", item.get("primaryLanguage", {}).get("name") if item.get("primaryLanguage") else "GitHub Project")
             desc = override.get("desc", item.get("description") or "")
-            md += f"* **[{title}]({url})**：{desc}\n"
+            md += f"| **[{title}]({url})** | {meta} | {desc} |\n"
         return md
     return ""
 
